@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from doyouwannagooutwithme.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 06 Feb 2024 18:49:20 GMT -->
+<head>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Happy Birthday Dimple Ji?</h1>
+            </div>
+            <div class="gif_container">
+                <img src="./dimple.png.jpg" alt="Cute animated illustration">
+            </div>
+            <div class = "buttons">
+                <!-- <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button> -->
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">Party ??</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+
+<!-- Mirrored from doyouwannagooutwithme.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 06 Feb 2024 18:49:21 GMT -->
+</html>
